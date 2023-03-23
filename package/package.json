@@ -1,0 +1,49 @@
+{
+  "name": "@clarkkk/eslint-config",
+  "version": "1.0.1",
+  "description": "clark eslint config",
+  "main": "eslint.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{ts,js,json}'",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liujia12138/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "javascript",
+    "npm-package",
+    "eslint-config"
+  ],
+  "author": "Clark",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.4.4",
+    "commitlint": "^17.4.4",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4"
+  },
+  "peerDependencies": {
+    "eslint": "^7.26.0"
+  },
+  "bugs": {
+    "url": "https://github.com/liujia12138/eslint-config/issues"
+  },
+  "homepage": "https://github.com/liujia12138/eslint-config#readme",
+  "files": [
+    "*.json",
+    "*.js"
+  ],
+  "lint-staged": {
+    "**.{js,vue}": [
+      "prettier --write",
+      "eslint  --fix",
+      "git add"
+    ]
+  }
+}

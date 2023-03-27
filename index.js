@@ -9,7 +9,6 @@ module.exports = {
     es6: true
   },
   extends: ['eslint:recommended'],
-  plugins: ['import'],
   rules: {
     indent: [
       'error',
@@ -43,7 +42,7 @@ module.exports = {
       'error',
       {
         before: true,
-        after: false
+        after: true
       }
     ],
     'space-in-parens': ['error', 'never'],
@@ -132,8 +131,6 @@ module.exports = {
     'no-fallthrough': 'error',
     'no-debugger': 'off',
     'no-console': 'off',
-
-    // dsas
     'spaced-comment': ['error', 'always'],
     'new-cap': [
       'error',
@@ -149,50 +146,6 @@ module.exports = {
       }
     ],
     'dot-location': [2, 'property'],
-    'jsx-quotes': [2, 'prefer-single'],
-    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
-    'import/default': 'error',
-    'import/dynamic-import-chunkname': 'off',
-    'import/export': 'error',
-    'import/exports-last': 'off',
-    'import/extensions': ['error', 'always'],
-    'import/first': 'error',
-    'import/group-exports': 'off',
-    'import/max-dependencies': 'off',
-    'import/named': 'error',
-    'import/namespace': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-absolute-path': 'error',
-    'import/no-amd': 'error',
-    'import/no-anonymous-default-export': 'off',
-    'import/no-commonjs': 'off',
-    'import/no-cycle': 'error',
-    'import/no-default-export': 'off',
-    'import/no-deprecated': 'off',
-    'import/no-duplicates': 'error',
-    'import/no-dynamic-require': 'off',
-    'import/no-empty-named-blocks': 'error',
-    'import/no-extraneous-dependencies': 'error',
-    'import/no-import-module-exports': 'off',
-    'import/no-internal-modules': 'off',
-    'import/no-mutable-exports': 'off',
-    'import/no-named-as-default': 'off',
-    'import/no-named-as-default-member': 'off',
-    'import/no-named-default': 'error',
-    'import/no-named-export': 'off',
-    'import/no-namespace': 'off',
-    'import/no-nodejs-modules': 'off',
-    'import/no-relative-packages': 'off',
-    'import/no-relative-parent-imports': 'off',
-    'import/no-restricted-paths': 'off',
-    'import/no-self-import': 'error',
-    'import/no-unassigned-import': 'off',
-    'import/no-unresolved': 'off',
-    'import/no-unused-modules': 'error',
-    'import/no-useless-path-segments': 'error',
-    'import/no-webpack-loader-syntax': 'off',
-    'import/order': 'error',
-    'import/prefer-default-export': 'off',
-    'import/unambiguous': 'off'
+    'jsx-quotes': [2, 'prefer-single']
   }
 }
